@@ -57,12 +57,12 @@ Used browser **DevTools (Alt + F)** to inspect elements and verify uniqueness.
 - Located **Username** field using XPath and entered credentials
 - Located **Password** field using XPath and entered credentials
 - Clicked the **Login** button
-
+  <img src="./screenshots/ohrm_login.JPG" alt="A centered screenshot">
 ### Step 3: Verify Successful Login
 
 - After login, verified that the next screen loaded correctly
 - Confirmed the logged-in user by checking the **PIM (Personnel Information Management)** module is accessible
-
+  <img src="./screenshots/ohrm_dashboard.JPG" alt="A centered screenshot">
 ---
 
 ### Step 4: Generate Allure Reports
