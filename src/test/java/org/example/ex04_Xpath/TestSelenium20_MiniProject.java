@@ -1,4 +1,4 @@
-package com.thetestingacademy.ex_04_XPath;
+package org.example.ex04_Xpath;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -12,7 +12,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestSelenium20_MiniProject {
-    @Owner("Pramod")
+    @Owner("Nirmala")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Verify login is working")
     @Test
@@ -35,7 +35,7 @@ public class TestSelenium20_MiniProject {
         button.click();
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
