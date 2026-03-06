@@ -2,7 +2,6 @@
 
 > **Project:** Cura Health Service App – Selenium Automation  
 > **Framework:** Selenium WebDriver + TestNG + Page Object Model (POM) + Allure Reports  
-> **Author:** QA Automation Engineer (5+ Years Experience)  
 > **Language:** Java | **Build Tool:** Maven
 
 ---
@@ -511,6 +510,7 @@ allure open allure-report
 ## ✅ Allure Report – Actual Results
 
 > **Screenshot taken:** 3/5/2026 — Local execution
+![Screenshot_5-3-2026_163842_127 0 0 1](https://github.com/user-attachments/assets/e350958d-2215-4389-9437-4ba3cae971a7)
 
 | Metric | Result |
 |--------|--------|
@@ -612,4 +612,4 @@ By.xpath("//div[@id='form']//input[@type='submit']")
 
 ---
 
-*Maintained by a Senior QA Automation Engineer | Java | Selenium | TestNG | POM | Allure*
+*Maintained by QA Automation Engineer | Java | Selenium | TestNG | POM | Allure*
