@@ -79,6 +79,10 @@ This launches a local Allure server and opens the HTML report in the browser.
 
 ## 📊 Allure Report Results
 
+<p align="center">
+  <img src="./screenshots/screenshot-report1.png" alt="A centered screenshot">
+</p>
+
 | Metric | Result |
 |--------|--------|
 | **Status** | ✅ 100% Passed |
