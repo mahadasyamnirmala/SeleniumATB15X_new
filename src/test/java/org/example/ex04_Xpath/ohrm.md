@@ -79,7 +79,7 @@ This launches a local Allure server and opens the HTML report in the browser.
 
 ## 📊 Allure Report Results
 
-<p align="center">
+<p>
   <img src="./screenshots/screenshot-report1.png" alt="A centered screenshot">
 </p>
 
