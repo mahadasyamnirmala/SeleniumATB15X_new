@@ -1,4 +1,4 @@
-package org.example.ex04_Xpath;
+package org.example.selenium_miniprojects.Ohrm_HRM;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -11,24 +11,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.List;
-
-public class TestSelenium21_MiniProject_04 {
+public class TestSelenium20_MiniProject {
     @Owner("Nirmala")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Verify login is working")
     @Test
     public void test_OHRM_login() {
         WebDriver driver = new ChromeDriver();
-        driver.get("https://katalon-demo-cura.herokuapp.com/");
-        WebElement btn_appointment= driver.findElement(By.xpath("//a[@id='btn-make-appointment']"));
+        driver.get("https://awesomeqa.com/hr/web/index.php/auth/login");
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
-
 
         WebElement input_username = driver.findElement(By.xpath("//input[@name='username']"));
         WebElement input_password = driver.findElement(By.xpath("//input[@placeholder='Password']"));
@@ -40,7 +35,7 @@ public class TestSelenium21_MiniProject_04 {
         button.click();
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -48,12 +43,6 @@ public class TestSelenium21_MiniProject_04 {
         WebElement h6 = driver.findElement(By.xpath("//span[@class=\"oxd-topbar-header-breadcrumb\"]/h6"));
 
         Assert.assertEquals(h6.getText(),"PIM");
-
-
-
-        List<WebElement> alt_images = driver.findElements(By.xpath("//img[starts-with(@alt,\"Image\")]"));
-        alt_images.get(0).click();
-
 
 
         driver.quit();
