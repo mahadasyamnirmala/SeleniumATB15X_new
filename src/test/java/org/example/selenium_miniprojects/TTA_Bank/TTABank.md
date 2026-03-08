@@ -122,7 +122,7 @@ driver.findElement(By.xpath("//a[contains(text(),'Dashboard')]")).click();
 WebElement updatedBalance = driver.findElement(By.xpath("//div[contains(@class,'balance')]"));
 Assert.assertEquals(updatedBalance.getText(), "$45,000.00");
 ```
-
+<img src="./Screenshots_TTA/show_dashbord_4.png" alt="A centered screenshot">
 ---
 
 ## 📊 Test Execution Output
@@ -216,14 +216,14 @@ mvn test
 # 4. Generate Allure Report
 allure serve allure-results
 ```
-
+<img src="./Screenshots_TTA/allure_ttabank.png" alt="A centered screenshot">
 ---
 
 ## 🙌 Author
 
-**Your Name**
-- 💼 [LinkedIn](https://www.linkedin.com/in/your-profile)
-- 🐙 [GitHub](https://github.com/your-username)
+**Nirmala**
+- 💼 [LinkedIn](https://www.linkedin.com/in/mahadasyamnirmala)
+- 🐙 [GitHub](https://github.com/mahadasyamnirmala)
 
 ---
 
