@@ -33,7 +33,7 @@ public class TestSelenium_22_Mini_Ohrm_webtable {
         button.click();
         // step3: go to the view employee list page
         Thread.sleep(3000);
-
+//step3: Locate the Table & Build Dynamic XPath Parts
         List<WebElement> Rows = driver.findElements(By.xpath("//div[@role='table']/div[@class='oxd-table-body']/div[@class='oxd-table-card']"));
 
         //div[@class='oxd-table-card'][1]/div/div[@role='cell'][6]
@@ -41,7 +41,7 @@ public class TestSelenium_22_Mini_Ohrm_webtable {
         String first_part = "//div[@class='oxd-table-card'][";
         String second_part = "]/div/div[@role='cell'][";
         String third_part = "]";
-
+        // step4: Get Table Dimensions (Rows & Columns)
         Integer row = driver.findElements(By.xpath("//div[@class='oxd-table-card']")).size();
         //    System.out.println(row);
 
@@ -55,18 +55,19 @@ public class TestSelenium_22_Mini_Ohrm_webtable {
 
                 String data = driver.findElement(By.xpath(dynamic_xpath)).getText();
                 //System.out.println(data);
+                //  step5: Detect "Terminated" Status & Print Employee Name
                 if(data.contains("Terminated"))
                 {
                     String emp_name_path = dynamic_xpath + "/preceding-sibling::div[3]";
                     String emp_name = driver.findElement(By.xpath(emp_name_path)).getText();
 
-                    System.out.println("Terminated Employee: " + emp_name);
+                    //System.out.println("Terminated Employee: " + emp_name);
                 }
             }
 
         }
 
-
+// step6: Click Delete on the 2nd Terminated Employee
         WebElement delete = driver.findElement(By.xpath("(//button/i[@class='oxd-icon bi-trash'])[2]"));
         delete.click();
 
